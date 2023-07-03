@@ -1,5 +1,5 @@
 import Products from '../Components/Products'
-import Try from '../Components/try'
+// import Try from '../Components/try'
 import React, { useEffect, useState } from "react";
 import Card from 'react-bootstrap/Card';
 import axios from 'axios'

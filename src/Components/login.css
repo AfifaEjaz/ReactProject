@@ -21,7 +21,6 @@
     width: 350px;
     margin: 0 auto;
     text-align: center;
-    /* background-color: aquamarine; */
     border-color: rgb(243, 236, 236);
     border-radius: 10px;
     box-shadow: 10px 10px 8px #888888;
@@ -30,18 +29,13 @@
 }
 
 .logo {
-    font-size: 50px;
-    /* color: white; */
-    /* color: rgb(144, 24, 224); */
+ 
     color: rgb(194, 23, 51);
     
 }
 
 .header h1 {
     font-size: 32px;
-    /* color: white; */
-    /* color: rgba(45 56 73 32); */
-    /* color: rgb(224, 121, 24); */
     color: rgb(194, 23, 51);
     margin-bottom: 10px;
     
@@ -49,8 +43,6 @@
 }
 
 .fields {
-    /* background-color: white; */
-    /* color: rgb(224, 121, 24); */
     color: rgb(194, 23, 51);
     border-radius: 6px;
 }
@@ -70,7 +62,6 @@
 
 .fields input[type="password"] {
     border-top: 1px solid #ccc;
-    /* color: rgb(224, 121, 24); */
     border-radius: 0px;
     -webkit-border-bottom-right-radius: 6px;
     -webkit-border-bottom-left-radius: 6px;
@@ -85,9 +76,6 @@
     width: 100%;
     border: none;
     color: white;
-    /* color: black; */
-    /* background-color: #2186D4; */
-    /* background-color: rgb(224, 121, 24); */
    background-color: rgb(194, 23, 51);
 
     font-size: 20px;
@@ -98,29 +86,20 @@
 }
 
 .form input[type="submit"]:hover{
-    /* background-color: #0b6ab4; */
-    /* background-color: rgb(165, 85, 10); */
     background-color: rgb(177, 76, 93);
-
-    /* color: rgb(224, 121, 24); */
     color: #ccc;
-    /* color: black; */
     cursor: pointer;
 }
 
 #footer p{
-    /* color: white; */
     color: rgb(194, 23, 51);
-
     font-size: 15px;
     margin-top: 8px;
     font-weight: lighter;
 }
 
 #footer p a{
-    /* color: white; */
     color: rgb(194, 23, 51);
-
     text-decoration: none;
     margin-right: 7px;
     font-weight: bold;

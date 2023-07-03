@@ -23,46 +23,14 @@ function Products() {
     return (
         <>
 
-            {/* <div style={{ display: 'flex',  overflow: 'scroll initial' }}>
-                <div className="d-flex">
-                    <CategorySidebar />
-                </div> */}
+        
 
 
                 <div className="container">
-                    {/* <div className="row"> */}
-                        {/* {
-                            productsss.map((val, key) =>
-                                <div key={key} className="col-md-4 mt-4">
-                                    <Card >
-                                        <Card.Img className='img-fluid h-10' variant="top" src={val.thumbnail} />
-                                        <Card.Body>
-                                            <Card.Title>{val.title}</Card.Title>
-                                            <Card.Text>
-                                                {val.description}
-                                            </Card.Text>
-                                            <Button variant="primary">Buy</Button>
-                                        </Card.Body>
-                                    </Card>
-                                </div>
-                            )} */}
+               
                        
                        <div className="row">
-                    {/* {
-                        check.map((val, key) =>
-                            <div key={key} className="col-md-4 mt-4">
-                                <Card >
-                                    <Card.Img className='img-fluid h-10' variant="top" src={val.thumbnail} />
-                                    <Card.Body>
-                                        <Card.Title>{val.title}</Card.Title>
-                                        <Card.Text>
-                                            {val.description}
-                                        </Card.Text>
-                                        <Button variant="primary">Buy</Button>
-                                    </Card.Body>
-                                </Card>
-                            </div>
-                        )} */}
+               
                 </div>
 
                     {/* </div> */}

@@ -20,7 +20,7 @@ function ImageSection({ images }) {
       <div className='d-flex align-items-center gap-3 bg-light border boder-dark p-4 mb-5'>
         {
           images?.map((val, key) =>
-            <div className={ img == images[key] ? ('border border-dark p-2') : (null)}>
+            <div className={ img == images[key] ? ('border border-dark p-2') : (null)} >
               <img onClick={() => changeImage(key)} key={key} className='img-fluid' src={val} alt={`img-${key}`} />
             </div>)
         }
