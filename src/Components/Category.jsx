@@ -45,7 +45,7 @@ function Category() {
                                     <Card.Text>
                                         {val.description.substring(0,68)}
                                     </Card.Text>
-                                    <Button variant="primary">Buy</Button>
+                                    <Button className='btn btn-danger w-100' variant="primary">Learn more!</Button>
                                 </Card.Body>
                             </Card>
                              </Link>

@@ -5,8 +5,7 @@
     font-family: sans-serif;
 }
 
-.mt-7{
-    margin-top: 7rem; 
-    
+.marginRow {
+    padding : 0px !important; 
 }
 

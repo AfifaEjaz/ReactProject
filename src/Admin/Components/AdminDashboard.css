@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+/* .Menu {
+    background-color: rgb(65, 134, 111);
+    width: 300px;
+    height: 100%;
+}
+
+.logoo h1 span {
+    color: rgb(216, 63, 170);
+}
+
+.items {
+    margin-top: 40px;
+}
+
+.items li {
+    list-style: none;
+    padding: 15px 0;
+    color: rgb(190, 15, 132);
+    
+
+}
+
+.items li a {
+    color: rgb(240, 27, 169);
+    width: 30px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 10px 0 25px;
+} */
+
+.after{
+    color:rgba(225, 20, 81, 0.84)
+}
+.after:hover{
+    color: rgb(12, 17, 13);
+    background-color: rgba(230, 200, 193, 0.3)
+
+}

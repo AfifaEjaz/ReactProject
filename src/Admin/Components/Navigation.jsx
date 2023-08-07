@@ -3,7 +3,6 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Cart from './Cart';
 
 
 
@@ -20,20 +19,15 @@ function Navigation() {
 
           <Nav className="ms-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            {/* <Nav.Link href="#about">About</Nav.Link> */}
+            <Nav.Link href="#about">About</Nav.Link>
             <Nav.Link href="/Products">Products</Nav.Link>
-            {/* <Nav.Link href="#contact">Contact</Nav.Link> */}
-            
-           
+            <Nav.Link href="#contact">Contact</Nav.Link>
             <NavDropdown title="Account" id="basic-nav-dropdown">
               <NavDropdown.Item  href="/Signup">Create An Account</NavDropdown.Item>
               <NavDropdown.Item href="/Login">Sign In</NavDropdown.Item>
-              {/* <NavDropdown.Item href="/Admin">Admin</NavDropdown.Item> */}
+              <NavDropdown.Item href="/Admin">Admin</NavDropdown.Item>
 
             </NavDropdown>
-            <span>
-              <Cart/>
-            </span>
           </Nav>
         </Navbar.Collapse>
       </Container>
