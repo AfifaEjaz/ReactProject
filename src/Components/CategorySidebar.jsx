@@ -13,7 +13,7 @@ import { NavLink } from 'react-router-dom';
 
 function CategorySidebar() {
     const [categories, setCategories] = useState([])
-    
+
 
     useEffect(() => {
         axios.get("https://dummyjson.com/products/categories").then(json => setCategories(json.data))
@@ -23,41 +23,41 @@ function CategorySidebar() {
         <>
 
             <div style={{ display: 'flex', height: '100vh', overflow: 'scroll initial' }}>
-            <CDBSidebar  textColor="#fff" backgroundColor="white">
-                <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
-                    <a href="/" className="text-decoration-none" style={{ color: 'pink' }}>
-                        Categories
-                    </a>
+                <CDBSidebar textColor="#fff" backgroundColor="white">
+                    <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large text-danger"></i>}>
+                        <a href="/" className="text-decoration-none" style={{ color: 'pink' }}>
+                            Categories
+                        </a>
 
-                </CDBSidebarHeader>
+                    </CDBSidebarHeader>
 
-                <CDBSidebarContent className="sidebar-content">
-                    <CDBSidebarMenu>
+                    <CDBSidebarContent className="sidebar-content">
+                        <CDBSidebarMenu>
 
-                        {
-                            categories.map((val, key) =>
-                                <Link to={`/products/category/${val}`}>
-                                    <CDBSidebarMenuItem className='after' icon="columns" key={key}>{val}</CDBSidebarMenuItem>
-                                </Link>
-                            )
-                        }
+                            {
+                                categories.map((val, key) =>
+                                    <Link to={`/products/category/${val}`}>
+                                        <CDBSidebarMenuItem className='after' icon="columns" key={key}>{val}</CDBSidebarMenuItem>
+                                    </Link>
+                                )
+                            }
 
-                    </CDBSidebarMenu>
-                </CDBSidebarContent>
+                        </CDBSidebarMenu>
+                    </CDBSidebarContent>
 
-                <CDBSidebarFooter style={{ textAlign: 'center' }}>
-                    <div
-                        style={{
-                            padding: '20px 5px',
-                        }}
-                    >
-                        Sidebar Footer
-                    </div>
-                </CDBSidebarFooter>
-            </CDBSidebar>
+                    <CDBSidebarFooter style={{ textAlign: 'center' }}>
+                        <div
+                            style={{
+                                padding: '20px 5px',
+                            }}
+                        >
+                            Sidebar Footer
+                        </div>
+                    </CDBSidebarFooter>
+                </CDBSidebar>
 
-        </div >
-         
+            </div >
+
 
         </>
     )

@@ -15,7 +15,7 @@ function ProductsPage() {
   const [products, setProducts] = useState([])
   const [isLoading, setIsLoading] = useState(true);
 
-  const {state,dispatch } = useContext(CartContext)
+  const { state, dispatch } = useContext(CartContext)
 
   useEffect(() => {
     axios.get('https://dummyjson.com/products')
@@ -26,11 +26,11 @@ function ProductsPage() {
   }, []);
 
   const addtoCart = (item) => {
-    
-    dispatch (
+
+    dispatch(
       {
-        type : "ADD_TO_CART",
-        payload : item
+        type: "ADD_TO_CART",
+        payload: item
       }
     )
   }
@@ -54,22 +54,22 @@ function ProductsPage() {
               (products.map((val, key) =>
 
                 <div key={key} className="col-md-3 my-4 ">
-                  
-                    <Card className='mx-2 shadow-lg bg-white rounded' >
+
+                  <Card className='mx-2 shadow-lg bg-white rounded' >
                     <Link className='text-decoration-none' to={`/Products/${val.id}`}>
                       <Card.Img style={{ height: '250px' }} className='img-fluid h-10' variant="top" src={val.thumbnail} />
-                      </Link>
-                      <Card.Body>
-                        <Card.Title>{val.title}</Card.Title>
-                        <Card.Text>
-                          {val.description.substring(0, 38)}
-                        </Card.Text>
-                        
-                        <Button className='btn btn-danger w-100' onClick={()=>addtoCart(val)} variant="primary">Add to Cart!</Button>
+                    </Link>
+                    <Card.Body>
+                      <Card.Title>{val.title}</Card.Title>
+                      <Card.Text>
+                        {val.description.substring(0, 38)}
+                      </Card.Text>
 
-                      </Card.Body>
-                    </Card>
-                 
+                      <Button className='btn btn-danger w-100' onClick={() => addtoCart(val)} variant="primary">Add to Cart!</Button>
+
+                    </Card.Body>
+                  </Card>
+
 
                 </div>
 

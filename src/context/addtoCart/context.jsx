@@ -6,7 +6,7 @@ import { useEffect } from 'react'
 
 const getCartData = () =>{
     let cartData = localStorage.getItem('cart')
-    if(cartData === []){
+    if(cartData == []){
         return []
     }
     else{

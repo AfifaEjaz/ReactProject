@@ -8,15 +8,17 @@ function CategoryPage() {
     return (
         <>
 
-            <div className="row " style={{ display: 'flex' }}>
-                <div  style={{  width: '20vw' }} className="col-md-3 ">
-                    <CategorySidebar />
+            <div style={{ display: 'flex', overflow: 'scroll initial' }}>
+                <div className="d-flex">
+                    {
+                        <CategorySidebar />
+                    }
                 </div>
                 <div className="col-md-9 ">
                     <Category />
                 </div>
             </div>
-          
+
 
 
 
