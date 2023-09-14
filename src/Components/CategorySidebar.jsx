@@ -36,8 +36,8 @@ function CategorySidebar() {
 
                             {
                                 categories.map((val, key) =>
-                                    <Link to={`/products/category/${val}`}>
-                                        <CDBSidebarMenuItem className='after' icon="columns" key={key}>{val}</CDBSidebarMenuItem>
+                                    <Link to={`/products/category/${val}`} key={key}>
+                                        <CDBSidebarMenuItem className='after' icon="columns">{val}</CDBSidebarMenuItem>
                                     </Link>
                                 )
                             }
